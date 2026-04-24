@@ -8,4 +8,4 @@ print("Training model...")
 subprocess.run([sys.executable, "src/train.py"])
 
 print("Starting n8n...")
-subprocess.run(["npx", "n8n"])
+subprocess.run("npx n8n", shell=True)
